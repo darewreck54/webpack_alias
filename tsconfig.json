@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+   // "noImplicitAny": false,
+    "jsx": "react",
+    "sourceMap": true,
+  //  "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": ".",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths" : {
+      "@common/*": ["common/src/*"], 
+      "@entity1/*": ["entity1/src/*"],
+      "@entity2/*": ["entity2/src/*"]
+    },
+  },
+  "include": [
+    "entity1/src/**/*",
+    "entity2/src/**/*",
+    "common/src/**/*",
+    "typings/src/**/*"
+  ],
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules"
+  ]
+}
